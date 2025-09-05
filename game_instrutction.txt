@@ -1,67 +1,41 @@
-STARLIGHT COURIER - Game Instructions
+BOX PUSHING PUZZLE GAME - INSTRUCTIONS
 
 OBJECTIVE:
-Deliver starlit parcels to beacons while avoiding detection by sentry drones. Complete all deliveries to win!
+Push all the orange boxes onto the pink target circles to complete each level.
 
 CONTROLS:
-- WASD: Move your character (turn-based)
-- SPACE: Interact (pick up/drop parcels, use telepads, toggle stealth)
-- R: Reset game to new random state
-- ESC: Quit game
+- W, A, S, D: Move player (blue circle) in four directions
+- SPACE: Select/deselect a box adjacent to player (highlighted in yellow)
+- R: Generate a new random level
 
-GAMEPLAY MECHANICS:
-
-1. TURN-BASED MOVEMENT:
-   - Game only advances when you press a key
-   - Each move triggers drone responses
-   - Plan your moves carefully!
-
-2. SENTRY DRONES:
-   - Red circles with direction indicators
-   - Mirror your PREVIOUS move pattern
-   - Red vision cones show detection areas
-   - Avoid being seen or game over after 3 detections
-
-3. PARCELS & DELIVERY:
-   - Cyan shapes scattered around the grid
-   - Different shapes: Circle (normal), Square (heavy), Triangle (fragile)
-   - Pick up with SPACE when standing on them
-   - Deliver to matching beacon types for maximum points
-
-4. BEACONS:
-   - Golden glowing circles
-   - Letter indicates required parcel type (N=normal, H=heavy, F=fragile)
-   - Stand on beacon with correct parcel and press SPACE to deliver
-
-5. STEALTH SYSTEM:
-   - Stand on cover spots (gray obstacles) and press SPACE to hide
-   - Green dot indicates stealth mode active
-   - Hidden players won't be detected by drones
-   - Stealth bonus: +50 points per delivery with zero detections
-
-6. TELEPADS:
-   - Purple pulsing circles
-   - Press SPACE to teleport between paired telepads
-   - Limited charges shown as numbers
-   - Strategic escape routes!
+GAME MECHANICS:
+- Move the blue player character around the grid
+- Push boxes by walking into them (you can only push, not pull)
+- Boxes turn green when placed on target positions
+- The game is turn-based - it only updates when you press a key
+- You cannot push boxes into walls or other boxes
+- Complete all targets to win the level
 
 SCORING:
-- Base points from parcel value
-- Type multipliers for special parcels
-- Stealth bonuses for perfect runs
-- Track deliveries and total score
+- Points: 100 per completed target + time bonus
+- Moves: Total number of player movements
+- Pushes: Number of times you pushed a box
+- Efficiency Bonus: Awarded for completing with minimal moves
+- Perfect Solution: Bonus for optimal completion
 
-GRID COORDINATES:
-- Each cell shows X,Y coordinates
-- Use coordinates to plan movements from screenshots
-- Grid is 16x12 (width x height)
+VISUAL GUIDE:
+- Blue Circle with eyes: Player
+- Orange Squares: Boxes (turn green on targets)
+- Pink Circles: Target positions
+- Dark Purple: Walls (impassable)
+- Light Blue-White: Empty floor
+- Yellow Outline: Selected box
+- Grid Coordinates: Shown on edges for reference
 
-GAME STATE:
-- Auto-saves after each action as game_state_step_X.json
-- Loads most recent save on startup
-- Can resume from any saved state
+TIPS:
+- Plan your moves carefully - boxes can get stuck!
+- Use the coordinate grid to understand positioning
+- Try to minimize the number of moves for better scores
+- Some boxes may need to be moved out of the way temporarily
 
-WIN CONDITION:
-Deliver all parcels to their matching beacons without being caught!
-
-TIP: Study drone patterns, use cover strategically, and plan efficient routes!
+The game automatically saves your progress after each move to JSON files.
